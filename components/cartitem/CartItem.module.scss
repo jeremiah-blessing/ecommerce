@@ -1,0 +1,78 @@
+$primary-font: "Cardo";
+$secondary-font: "Josefin Sans";
+
+$primary-color: #ed6a5a;
+$secondary-color: #f4f1bb;
+
+.product {
+  height: 150px;
+  border-top: 1px solid $primary-color;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  padding: 10px;
+  margin-top: 15px;
+}
+
+.productDetails {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  div:nth-child(1) {
+    height: 100%;
+    width: 130px;
+    background-color: $primary-color;
+    border-radius: 7px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+.productDetailsIn {
+  margin-left: 15px;
+  height: 100%;
+  cursor: pointer;
+  text-decoration: underline;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: $primary-color;
+  a {
+    font-size: 20px;
+    color: $primary-color;
+  }
+}
+
+.productQuantity {
+  div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: fit-content;
+    border-radius: 5px;
+    overflow: hidden;
+    span {
+      background-color: $primary-color;
+      height: 35px;
+      width: 35px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      user-select: none;
+
+      svg {
+        vertical-align: middle;
+      }
+    }
+    span:nth-child(1),
+    span:nth-child(3) {
+      cursor: pointer;
+    }
+  }
+}
+.productTotal {
+  color: $primary-color;
+  justify-self: flex-end;
+  font-size: 23px;
+}
